@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "blutooth-ble",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

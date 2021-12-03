@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="dark">
+      ᛒᚼ
+    </ion-title>
+    <ion-button (click)="Scan()" slot="end">
+      <ion-icon name="Bluetooth"></ion-icon>
+      <p>Scan</p>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card-content ion-item *ngFor="let device of devices">
+      <p>Name : {{device.name || 'Unnamed'}}</p>
+      <p>Id : {{device.id}}</p>
+      <p>RSSI : {{device.rssi}}</p>
+      <ion-button color="dark" (click)="BleInfo()" slot="end">
+        <p>Info</p>
+        <ion-icon slot="end" name="star"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-list>
+</ion-content>
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content> -->

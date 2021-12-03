@@ -1,0 +1,7 @@
+{
+  "name": "blutooth-ble",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
